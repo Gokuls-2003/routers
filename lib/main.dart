@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:routers/pages/details.dart';
 import 'package:routers/pages/home.dart';
 
 void main() {
@@ -10,12 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-      home: HomePage(),
+      initialRoute: "/",
+      routes: {
+        '/': (context) => HomePage(),
+        '/details': (context) => DetailsPage()
+      },
     );
   }
 }

@@ -11,7 +11,10 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: ElevatedButton(
-            onPressed: () {}, child: const Text("Go to Details")),
+            onPressed: () {
+              Navigator.pushNamed(context, '/details');
+            },
+            child: const Text("Go to Details")),
       ),
     );
   }

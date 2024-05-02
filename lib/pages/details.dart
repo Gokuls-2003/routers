@@ -10,7 +10,11 @@ class DetailsPage extends StatelessWidget {
         title: const Text("Details Page"),
       ),
       body: Center(
-        child: ElevatedButton(onPressed: () {}, child: const Text("Go Back")),
+        child: ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: const Text("Go Back")),
       ),
     );
   }
